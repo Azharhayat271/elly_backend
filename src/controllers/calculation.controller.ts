@@ -34,7 +34,7 @@ export class CalculationController {
       res.status(201).json(calculation);
     } catch (error) {
       const err = error as Error;
-      if (err.message.includes('required') || err.message.includes('Invalid')) {
+      if (err.message.includes('required') || err.message.includes('Invalid') || err.message.includes('Division by zero')) {
         res.status(400).json({ error: err.message });
       } else if (err.message.includes('not found')) {
         res.status(404).json({ error: err.message });
