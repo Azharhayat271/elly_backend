@@ -1,0 +1,20 @@
+node_modules
+dist
+build
+.env
+.env.local
+*.log
+coverage
+.DS_Store
+.venv
+*.zip
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.ebextensions
+Dockerrun.aws.json.backup
+.ebignore
+deploy.sh
+DEPLOYMENT.md
